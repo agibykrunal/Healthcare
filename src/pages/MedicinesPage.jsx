@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useApp } from '../context/AppContext';
 import { Pill, Plus, Clock, CheckCircle2, AlertCircle, XCircle } from 'lucide-react';
-//ssjjdjfjjfjjfffffffffdd
+//ssjjdjfjjfjjfffffffffd
 const MEDICINES = [
   { id: 1, name: 'Vitamin D3',         dose: '1000 IU', times: ['08:00'],          color: '#f59e0b', taken: [true],         notes: 'Take with breakfast' },
   { id: 2, name: 'Blood Pressure Med', dose: '5mg',     times: ['08:00','20:00'],   color: '#3b82f6', taken: [true, false],  notes: 'Do not skip' },
