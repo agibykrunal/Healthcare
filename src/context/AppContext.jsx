@@ -1,5 +1,4 @@
 import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
-/
 const AppContext = createContext(null);
 
 export function AppProvider({ children }) {
