@@ -13,6 +13,7 @@ import RegisterPage from './pages/RegisterPage';
 import { CheckCircle2, AlertCircle, AlertTriangle } from 'lucide-react';
 
 
+
 const PAGES = {
   dashboard: Dashboard,
   schedule:  SchedulePage,
