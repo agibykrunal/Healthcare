@@ -1,4 +1,4 @@
-//hrhrhhhthhth
+//hrhrhhhthht
 import React from 'react';
 import { useApp } from '../context/AppContext';
 import { Footprints, Timer, Moon, Play, Square, TrendingUp, Zap } from 'lucide-react';
