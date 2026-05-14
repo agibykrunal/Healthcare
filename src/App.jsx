@@ -20,7 +20,7 @@ const PAGES = {
   chatbot:   ChatbotPage,
   register:  RegisterPage,
 };
-
+//fhfhfhgooososoosoooosooos
 function Toast() {
   const { toast } = useApp();
   if (!toast) return null;
