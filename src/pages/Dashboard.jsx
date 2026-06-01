@@ -1,5 +1,5 @@
 import React from 'react';
-/*hhhhhhhhhhhhhh*/
+/*hhhhhhhhhhhhh*/
 import { useApp } from '../context/AppContext';
 import {
   Footprints, Flame, Droplets, Heart, TrendingUp, TrendingDown,
