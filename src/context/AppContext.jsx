@@ -11,7 +11,7 @@ export function AppProvider({ children }) {
   const [steps, setSteps] = useState(4823);
   const [runTime, setRunTime] = useState(0);   
   const [walkTime, setWalkTime] = useState(0); 
-  const [napTime, setNapTime] = useState(0);   // second
+  const [napTime, setNapTime] = useState(0);   // secon
 
   // Schedule
   const [schedules, setSchedules] = useState([
