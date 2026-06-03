@@ -9,7 +9,7 @@ export function AppProvider({ children }) {
   // Activity tracking
   const [tracking, setTracking] = useState({ type: null, startTime: null });
   const [steps, setSteps] = useState(4823);
-  const [runTime, setRunTime] = useState(0);   // seco
+  const [runTime, setRunTime] = useState(0);   // sec
   const [walkTime, setWalkTime] = useState(0); // seconds
   const [napTime, setNapTime] = useState(0);   // seconds
 
