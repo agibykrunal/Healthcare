@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.css';/*chhhhccccc*/
+import './index.css';/*chhhhcccc*/
 import { AppProvider, useApp } from './context/AppContext';
 import Sidebar from './components/Sidebar';
 import Topbar from './components/Topbar';
