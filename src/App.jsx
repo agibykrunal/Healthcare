@@ -10,6 +10,7 @@ import ActivityPage from './pages/ActivityPage';
 import RecipesPage from './pages/RecipesPage';
 import ChatbotPage from './pages/ChatbotPage';
 import RegisterPage from './pages/RegisterPage';
+import BookingPage from './pages/BookingPage';
 import { CheckCircle2, AlertCircle, AlertTriangle } from 'lucide-react';
 const PAGES = {
   dashboard: Dashboard,
@@ -19,6 +20,7 @@ const PAGES = {
   recipes:   RecipesPage,
   chatbot:   ChatbotPage,
   register:  RegisterPage,
+  booking:   BookingPage,
 };
 
 function Toast() {

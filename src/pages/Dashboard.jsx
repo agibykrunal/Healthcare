@@ -2,7 +2,7 @@ import React from 'react';
 import { useApp } from '../context/AppContext';
 import {
   Footprints, Flame, Droplets, Heart, TrendingUp, TrendingDown,
-  Clock, Pill, CheckCircle2, Circle, Sun, Moon, Activity
+  Clock, Pill, CheckCircle2, Circle, Sun, Moon, Activity, Stethoscope
 } from 'lucide-react';
 
 function StatCard({ icon: Icon, iconClass, value, label, change, changeDir, color }) {
@@ -129,7 +129,7 @@ function HealthRing({ value, max, label, color }) {
 }
 
 export default function Dashboard() {
-  const { schedules, steps, runTime, formatTime } = useApp();
+  const { schedules, steps, runTime, formatTime, setActivePage } = useApp();
   const doneMeds = schedules.filter(s => s.type === 'med' && s.done).length;
   const totalMeds = schedules.filter(s => s.type === 'med').length;
 
@@ -184,6 +184,21 @@ export default function Dashboard() {
           <HealthRing value={doneMeds} max={totalMeds} label="Medicines" color="#3b82f6" />
           <HealthRing value={Math.min(Math.round(runTime/60), 30)} max={30} label="Active Min" color="#f59e0b" />
           <HealthRing value={7} max={8} label="Sleep (hrs)" color="#8b5cf6" />
+        </div>
+      </div>
+
+      {/* Tips */}
+      <div className="card fade-up" style={{ background:'var(--green-pale)', border:'1px solid rgba(45, 166, 125, 0.22)' }}>
+        <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center', gap:16, flexWrap:'wrap' }}>
+          <div>
+            <div className="card-title"><Stethoscope size={18} color="var(--green-mid)" /> Online Healthcare Booking</div>
+            <div className="card-sub" style={{ marginBottom:0 }}>
+              Select condition, compare hospitals, and schedule online consultations or tests in one flow.
+            </div>
+          </div>
+          <button className="btn btn-primary" onClick={() => setActivePage('booking')}>
+            Start Booking
+          </button>
         </div>
       </div>
 
