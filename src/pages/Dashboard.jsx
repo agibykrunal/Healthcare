@@ -129,7 +129,7 @@ function HealthRing({ value, max, label, color }) {
 }
 
 export default function Dashboard() {
-  const { schedules, steps, runTime, formatTime } = useApp();
+  const { schedules, steps, runTime, formatTime, setActivePage } = useApp();
   const doneMeds = schedules.filter(s => s.type === 'med' && s.done).length;
   const totalMeds = schedules.filter(s => s.type === 'med').length;
 
@@ -142,6 +142,9 @@ export default function Dashboard() {
           <div className="section-sub">Today's overview — stay consistent, stay healthy</div>
         </div>
         <div style={{ display:'flex', gap:8 }}>
+          <button className="btn btn-primary btn-sm" onClick={() => setActivePage('booking')}>
+            Book Healthcare
+          </button>
           <div style={{ background:'var(--green-pale)', borderRadius:8, padding:'8px 14px', fontSize:12, fontWeight:600, color:'var(--green-deep)' }}>
             <Sun size={12} style={{ marginRight:4, verticalAlign:'middle' }} />
             Day 12 Streak 🔥

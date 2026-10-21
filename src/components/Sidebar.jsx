@@ -2,7 +2,7 @@ import React from 'react';
 import { useApp } from '../context/AppContext';
 import {
   LayoutDashboard, Calendar, Pill, BookOpen, MessageCircle,
-  UserPlus, Heart, ChevronRight, Activity, UtensilsCrossed
+  UserPlus, Heart, ChevronRight, Activity, UtensilsCrossed, Stethoscope
 } from 'lucide-react';
 
 const NAV = [
@@ -15,6 +15,7 @@ const NAV = [
   { section: 'Tools', items: [
     { id: 'recipes',    label: 'Recipe Vault',   icon: UtensilsCrossed },
     { id: 'chatbot',    label: 'AI Health Chat', icon: MessageCircle, badge: 'AI' },
+    { id: 'booking',    label: 'Book Care',      icon: Stethoscope, badge: 'New' },
     { id: 'register',   label: 'Patient Form',   icon: UserPlus },
   ]},
 ];
