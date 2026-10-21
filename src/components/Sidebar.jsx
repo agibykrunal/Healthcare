@@ -1,8 +1,8 @@
 import React from 'react';
 import { useApp } from '../context/AppContext';
 import {
-  LayoutDashboard, Calendar, Pill, BookOpen, MessageCircle,
-  UserPlus, Heart, ChevronRight, Activity, UtensilsCrossed
+  LayoutDashboard, Calendar, Pill, MessageCircle,
+  UserPlus, Heart, ChevronRight, Activity, UtensilsCrossed, Stethoscope
 } from 'lucide-react';
 
 const NAV = [
@@ -13,6 +13,7 @@ const NAV = [
     { id: 'activity',   label: 'Activity',       icon: Activity },
   ]},
   { section: 'Tools', items: [
+    { id: 'booking',    label: 'Book Care',      icon: Stethoscope, badge: 'New' },
     { id: 'recipes',    label: 'Recipe Vault',   icon: UtensilsCrossed },
     { id: 'chatbot',    label: 'AI Health Chat', icon: MessageCircle, badge: 'AI' },
     { id: 'register',   label: 'Patient Form',   icon: UserPlus },
